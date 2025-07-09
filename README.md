@@ -37,4 +37,4 @@ This project is meant to serve:
 MIT License. See `LICENSE` for full terms.
 
 
-### Owner: SentinelByte
+### SentinelByte
