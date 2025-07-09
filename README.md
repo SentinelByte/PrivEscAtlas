@@ -1,4 +1,4 @@
-# Privilege Escalation Patterns DB
+# Privilege Escalation Atlas
 
 A structured collection of privilege escalation techniques across Linux, Windows, and macOS. Each entry includes:
 
