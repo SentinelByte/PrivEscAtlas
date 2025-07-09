@@ -32,12 +32,9 @@ This project is meant to serve:
 
 ---
 
-## Contributing
-
-Pull requests are welcome. Please follow the existing folder structure and pattern format. See `CONTRIBUTING.md` for details.
-
----
-
 ## License
 
 MIT License. See `LICENSE` for full terms.
+
+
+### Owner: SentinelByte
