@@ -1,0 +1,27 @@
+title: Sudo Abuse of Privileged Shell-Capable Binary
+id: f631e546-0c83-4e7f-9a47-e7bda2a477c9
+description: Detects usage of sudo to run shell-escaping commands like vim, less, tar, etc.
+status: experimental
+author: SentinelByte
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+      - 'sudo vim'
+      - 'sudo less'
+      - 'sudo tar'
+      - 'sudo python'
+      - 'sudo python3'
+      - 'sudo find'
+      - 'sudo awk'
+      - 'sudo env'
+  condition: selection
+fields:
+  - CommandLine
+  - User
+  - ParentProcessName
+level: medium
+tags:
+  - T1548.003

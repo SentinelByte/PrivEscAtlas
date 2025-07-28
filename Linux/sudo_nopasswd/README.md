@@ -23,3 +23,5 @@ sudo vim -c ':!bash'
 ```
 
 Escaping via vim into a shell with elevated prevleges.
+
+### SentinelByte
