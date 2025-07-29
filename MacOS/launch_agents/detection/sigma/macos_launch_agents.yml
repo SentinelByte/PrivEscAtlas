@@ -1,0 +1,19 @@
+title: Suspicious LaunchAgent File Created
+id: 7b7fc3cd-e88e-4370-9917-f020ad7c9c79
+description: Detects creation or modification of LaunchAgent .plist files in user directories
+status: stable
+author: SentinelByte
+logsource:
+  product: macos
+  category: file_event
+detection:
+  selection:
+    TargetFilename|contains: '/Library/LaunchAgents/'
+    TargetFilename|endswith: '.plist'
+  condition: selection
+fields:
+  - TargetFilename
+  - User
+level: medium
+tags:
+  - T1543.001
