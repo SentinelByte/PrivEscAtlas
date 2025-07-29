@@ -40,7 +40,7 @@ While `~/Library/LaunchAgents/` alone does **not** grant elevated privileges, th
 
 See [`poc.sh`](./poc.sh) for:
 - A basic example using `whoami`
-- An alternate version using a reverse shell payload
+- An alternate version using a reverse shell payload. See [`poc_reverse_shell.sh`](./poc_reverse_shell.sh)
 - Instructions for persistent execution and cleanup
 
 ## Detection
