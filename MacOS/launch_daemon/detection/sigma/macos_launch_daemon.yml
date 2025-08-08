@@ -1,0 +1,20 @@
+title: LaunchDaemon .plist File Created or Modified
+id: 9e8b9c64-f360-4b7e-9175-6c08fd0f16c6
+description: Detects creation of LaunchDaemon files which execute as root at system boot
+status: stable
+author: SentinelByte
+logsource:
+  product: macos
+  category: file_event
+detection:
+  selection:
+    TargetFilename|contains: '/Library/LaunchDaemons/'
+    TargetFilename|endswith: '.plist'
+  condition: selection
+fields:
+  - TargetFilename
+  - User
+  - EventID
+level: high
+tags:
+  - T1543.004
